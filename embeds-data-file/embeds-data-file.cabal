@@ -1,0 +1,15 @@
+cabal-version:       >=1.10
+name:                embeds-data-file
+version:             0.1.0.0
+license-file:        LICENSE
+author:              Andreas Herrmann
+maintainer:          andreas.herrmann@tweag.io
+build-type:          Simple
+extra-source-files:  CHANGELOG.md
+
+library
+  exposed-modules:     UsesDataFile
+  build-depends:       base >=4.13 && <4.14
+                     , provides-data-file
+                     , template-haskell
+  default-language:    Haskell2010
